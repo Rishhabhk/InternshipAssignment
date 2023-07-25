@@ -1,7 +1,7 @@
 import './App.css'
 import Form from './pages/Form'
 import Home from './pages/Home';
-import Main from './components/Main';
+import First from './components/First';
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import { useState, useEffect } from 'react';
@@ -21,7 +21,7 @@ function App() {
       <Navbar isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
 
       <Routes>
-        <Route path='/' element={<Main />}>
+        <Route path='/' element={<First />}>
           <Route index element={<Form isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />}></Route>
           <Route path='/home' element={<Home />}></Route>
         </Route>
