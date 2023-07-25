@@ -29,13 +29,8 @@ const Navbar = ({ isLoggedIn, setIsLoggedIn }: Props) => {
     setNavName(userInfo.name)
   })
 
-  const handleClose = (event?: React.SyntheticEvent | Event, reason?: string) => {
-    if (reason === "clickaway") {
-      return;
-    }
-    else {
+  const handleClose = () => {
       setOpen(false);
-    }
   }
 
   function homeHandler() {
