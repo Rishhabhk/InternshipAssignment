@@ -82,7 +82,6 @@ const DeptComponent = () => {
 
     return (
         <Box sx={{ m: 5, ml: 10, mr: 10 }}>
-
             <List sx={{ display: 'flex' }} >
                 <ListItemButton onClick={openServiceHandler} sx={{ borderRadius: 50, width: 60, mr: 1 }} >
                     <ListItemIcon>{openService ? <ExpandLessIcon /> : <ExpandMoreIcon />}</ListItemIcon>
